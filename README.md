@@ -41,7 +41,7 @@
 
 ├── tsconfig.json
 
-└── index.ts
+└─index.ts
 
 
 
