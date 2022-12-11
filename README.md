@@ -1,39 +1,39 @@
 # staff-scheduling-system
 
 ├── src
-│
+
 │ ├── controllers
-│
+
 │ │ ├── admin.controller.ts
-│
+
 │ │ └── user.controller.ts
-│
+
 │ │ ├── models
-│
+
 │ │ ├── index.ts
-│
+
 │ │ ├── schedule.model.ts
-│
+
 │ │ └── user.model.ts
-│
+
 │ │ └── views
-│
+
 │ ├── admin.view.html
-│
+
 │ ├── user.view.html
-│
+
 │ └── index.html │ ├── tests
-│
+
 │ ├── admin.controller.test.ts
-│
+
 │ ├── user.controller.test.ts
-│
+
 │ └── schedule.model.test.ts
-│
+
 │ ├── package.json
-│
+
 ├── tsconfig.json
-│
+
 └── index.ts
 
 
