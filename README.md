@@ -4,30 +4,43 @@
 ├── **SRC**
 
 │   ├── **CONTROLLERS**
+
 │   │   ├── admin.controller.ts
+
 │   │   └── user.controller.ts
 │   │
 
 │   ├── **MODELS**
+
 │   │   ├── index.ts
+
 │   │   ├── schedule.model.ts
+
 │   │   └── user.model.ts
 │   │
 
 │   └── **VIEWS**
+
 │       ├── admin.view.html
+
 │       ├── user.view.html
+
 │       └── index.html
 │
 
 ├── tests
+
 │   ├── admin.controller.test.ts
+
 │   ├── user.controller.test.ts
+
 │   └── schedule.model.test.ts
 │
 
 ├── package.json
+
 ├── tsconfig.json
+
 └── index.ts
 
 
