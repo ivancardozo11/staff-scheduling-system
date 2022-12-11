@@ -2,13 +2,16 @@
   "name": "staff-scheduling-system",
   "version": "1.0.0",
   "description": "A staff scheduling system app",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "start:dev": "nodemon",
+    "build": "tsc"
   },
   "author": "Ivan Cardozo",
   "license": "GPL-3.0",
   "dependencies": {
+    
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
