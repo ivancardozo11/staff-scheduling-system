@@ -5,36 +5,36 @@
 
 │   ├── **CONTROLLERS**
 
-│   │   ├── admin.controller.ts
+│   │   ├── adminController.ts
 
-│   │   └── user.controller.ts
+│   │   └── userController.ts
 │   │
 
 │   ├── **MODELS**
 
 │   │   ├── index.ts
 
-│   │   ├── schedule.model.ts
+│   │   ├── scheduleModel.ts
 
-│   │   └── user.model.ts
+│   │   └── userModel.ts
 │   │
 
 │   └── **VIEWS**
 
-│       ├── admin.view.html
+│       ├── adminView.html
 
-│       ├── user.view.html
+│       ├── userView.html
 
 │       └── index.html
 │
 
 ├── **TESTS**
 
-│   ├── admin.controller.test.ts
+│   ├── adminController.test.ts
 
-│   ├── user.controller.test.ts
+│   ├── userController.test.ts
 
-│   └── schedule.model.test.ts
+│   └── scheduleModel.test.ts
 │
 
 ├── package.json
