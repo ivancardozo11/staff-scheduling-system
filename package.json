@@ -1,0 +1,11 @@
+{
+  "name": "staff-scheduling-system",
+  "version": "1.0.0",
+  "description": "A staff scheduling system app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Cardozo",
+  "license": "GPL-3.0"
+}
