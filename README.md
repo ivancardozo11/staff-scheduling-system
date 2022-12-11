@@ -28,7 +28,7 @@
 │       └── index.html
 │
 
-├── tests
+├── **TESTS**
 
 │   ├── admin.controller.test.ts
 
