@@ -1,47 +1,73 @@
 # staff-scheduling-system
 
-.
 ├── **SRC**
 
-│   ├── **CONTROLLERS**
+│ ├── **CONTROLLERS**
 
-│   │   ├── adminController.ts
+│ │ ├── adminController.ts
 
-│   │   └── userController.ts
-│   │
+│ │ └── userController.ts
 
-│   ├── **MODELS**
+│ ├── **MODELS**
 
-│   │   ├── index.ts
+│ │ ├── index.ts
 
-│   │   ├── scheduleModel.ts
+│ │ ├── rolesModel.ts
 
-│   │   └── userModel.ts
-│   │
+│ │ ├── scheduleModel.ts
 
-│   └── **VIEWS**
+│ │ └── userModel.ts
+│ │
 
-│       ├── adminView.html
+│ ├── **VIEWS**
 
-│       ├── userView.html
+│ │ ├── adminView.html
 
-│       └── index.html
+│ │ ├── userView.html
+
+│ │ └── index.html
 │
+
+
+
+│ ├── **ROUTES**
+
+
+│ │ ├── adminRoutes.ts
+
+
+│ │ └── userRoutes.ts
+│
+
+
+│ └── **AUTHENTICATION**
+
+
+
+│     ├── authenticate.ts
+
+
+│     └── authorize.ts
+
+
 
 ├── **TESTS**
 
-│   ├── adminController.test.ts
 
-│   ├── userController.test.ts
+│ ├── adminController.test.ts
 
-│   └── scheduleModel.test.ts
-│
+
+│ ├── userController.test.ts
+
+
+│ └── scheduleModel.test.ts
+
 
 ├── package.json
 
 ├── tsconfig.json
 
-└─index.ts
+└── index.ts
 
 
 
