@@ -7,6 +7,7 @@
 │ │ ├── adminController.ts
 
 │ │ └── userController.ts
+
 │ ├── **MODELS**
 
 │ │ ├── index.ts
@@ -17,6 +18,7 @@
 
 │ │ └── userModel.ts
 │ │
+
 │ ├── **VIEWS**
 
 │ │ ├── adminView.html
