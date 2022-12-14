@@ -27,8 +27,7 @@
 
 │ │ └── index.html
 │
-│ ├ ── **ROUTES**
-
+│ ├── **ROUTES**
 │ │ ├── adminRoutes.ts
 
 │ │ └── userRoutes.ts
