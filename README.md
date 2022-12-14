@@ -34,13 +34,12 @@
 
 │ │ └── userRoutes.ts
 │
-│ └ ── **AUTHENTICATION**
+│ └── **AUTHENTICATION**
 
 │     ├── authenticate.ts
-
 │     └── authorize.ts
-├ ── **TESTS**
 
+├── **TESTS**
 │ ├── adminController.test.ts
 
 │ ├── userController.test.ts
