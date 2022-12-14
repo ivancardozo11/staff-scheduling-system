@@ -19,7 +19,7 @@
 │ │ └── userModel.ts
 │ │
 
-│ ├── **VIEWS**
+│ ├ ── **VIEWS**
 
 │ │ ├── adminView.html
 
@@ -27,18 +27,18 @@
 
 │ │ └── index.html
 │
-│ ├── **ROUTES**
+│ ├ ── **ROUTES**
 
 │ │ ├── adminRoutes.ts
 
 │ │ └── userRoutes.ts
 │
-│ └── **AUTHENTICATION**
+│ └ ── **AUTHENTICATION**
 
 │     ├── authenticate.ts
 
 │     └── authorize.ts
-├── **TESTS**
+├ ── **TESTS**
 
 │ ├── adminController.test.ts
 
