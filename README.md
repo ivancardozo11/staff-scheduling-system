@@ -44,10 +44,8 @@
 
 
 
-│     ├── authenticate.ts
+│     ├── schedulingRoutes.ts
 
-
-│     └── authorize.ts
 
 
 
