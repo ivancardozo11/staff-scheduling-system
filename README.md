@@ -35,6 +35,7 @@
 
 │ │ ├── adminRoutes.ts
 
+
 │ │ └── userRoutes.ts
 │
 
@@ -44,6 +45,8 @@
 
 
 │     ├── authenticate.ts
+
+
 │     └── authorize.ts
 
 
@@ -53,9 +56,12 @@
 
 │ ├── adminController.test.ts
 
+
 │ ├── userController.test.ts
 
+
 │ └── scheduleModel.test.ts
+
 
 ├── package.json
 
