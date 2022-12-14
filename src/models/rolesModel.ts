@@ -1,7 +1,7 @@
 import { sequelize, DataTypes } from './index';
 
 // Define the roles model
-const rolesModel = sequelize.define('Role', {
+const Role = sequelize.define('Role', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
@@ -22,4 +22,4 @@ const rolesModel = sequelize.define('Role', {
   tableName: 'roles'
 });
 
-export default rolesModel;
+export default Role;

@@ -1,11 +1,18 @@
 import express from 'express';
-// import * as adminController from './controllers/adminController';
-// import * as userController from './controllers/userController';
+import bodyParser from 'body-parser';
+import schedulingRoutes from './src/routes/schedulingRoutes.ts';
 
 const app = express();
+const port = process.env.PORT || 8080;
 
-// Set up your endpoints here using the express app instance
+// Use body-parser to parse incoming requests
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(3000, () => {
-  console.log('Server is listening on port 3000 🚀🚀🚀🚀🚀🚀🚀🚀');
+// Use the schedulingRoutes for handling requests
+app.use('/api', schedulingRoutes);
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is listening ${port} 🚀🚀🚀🚀🚀🚀🚀🚀`);
 });
