@@ -40,24 +40,12 @@
 │
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f258aa636a251520638f5aa0c204234af1f1bc44
 │ └── **AUTHENTICATION**
 
 
 
-<<<<<<< HEAD
-│     ├── authenticate.ts
-
-
-│     └── authorize.ts
-=======
-
 │     ├── schedulingRoutes.ts
 
->>>>>>> f258aa636a251520638f5aa0c204234af1f1bc44
 
 
 
