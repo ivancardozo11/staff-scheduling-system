@@ -3,7 +3,6 @@
 ├── **SRC**
 
 │ ├── **CONTROLLERS**
-
 │ │ ├── adminController.ts
 
 │ │ └── userController.ts
@@ -19,7 +18,7 @@
 │ │ └── userModel.ts
 │ │
 
-│ ├ ── **VIEWS**
+│ ├── **VIEWS**
 
 │ │ ├── adminView.html
 
