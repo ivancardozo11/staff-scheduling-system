@@ -37,12 +37,20 @@
 
 │ │ └── userRoutes.ts
 │
+
+
 │ └── **AUTHENTICATION**
+
+
 
 │     ├── authenticate.ts
 │     └── authorize.ts
 
+
+
 ├── **TESTS**
+
+
 │ ├── adminController.test.ts
 
 │ ├── userController.test.ts
