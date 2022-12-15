@@ -25,22 +25,11 @@
 │ │ └── userModel.ts
 │ │
 
-│ ├── **VIEWS**
-
-│ │ ├── adminView.html
-
-│ │ ├── userView.html
-
-│ │ └── index.html
-│
-
-
 
 │ ├── **ROUTES**
 
 
 │ │ ├── adminRoutes.ts
-
 
 │ │ └── userRoutes.ts
 │
