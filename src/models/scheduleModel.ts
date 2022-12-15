@@ -1,16 +1,18 @@
-import { sequelize, DataTypes } from './index';
+import { Database } from './index'
 import userModel from './userModel';
 
+const db = new Database();
+
 // Define the schedule model
-const scheduleModel = sequelize.define('Schedule', {
+const scheduleModel = db.sequelize.define('Schedule', {
   // Define the schedule's attributes
   id: {
-    type: DataTypes.INTEGER,
+    type: db.dataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },
   user_id: {
-    type: DataTypes.INTEGER,
+    type: db.dataTypes.INTEGER,
     allowNull: false,
     references: {
       model: userModel,
@@ -18,15 +20,15 @@ const scheduleModel = sequelize.define('Schedule', {
     }
   },
   work_date: {
-    type: DataTypes.DATE,
+    type: db.dataTypes.DATE,
     allowNull: false
   },
   shift_length: {
-    type: DataTypes.TIME,
+    type: db.dataTypes.TIME,
     allowNull: false
   },
   work_hours: {
-    type: DataTypes.FLOAT,
+    type: db.dataTypes.FLOAT,
     allowNull: false
   }
 }, {

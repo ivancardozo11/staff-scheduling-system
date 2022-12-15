@@ -1,29 +1,31 @@
-import { sequelize, DataTypes } from './index';
+import { Database } from './index';
 import rolesModel from './rolesModel';
 
+const db = new Database();
+
 // Define the users model
-const userModel = sequelize.define('User', {
+const userModel = db.sequelize.define('User', {
   // Define the user's attributes
   id: {
-    type: DataTypes.INTEGER,
+    type: db.dataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },
   name: {
-    type: DataTypes.STRING,
+    type: db.dataTypes.STRING,
     allowNull: false
   },
   username: {
-    type: DataTypes.STRING,
+    type: db.dataTypes.STRING,
     allowNull: false,
     unique: true
   },
   password: {
-    type: DataTypes.STRING,
+    type: db.dataTypes.STRING,
     allowNull: false
   },
   role_id: {
-    type: DataTypes.INTEGER,
+    type: db.dataTypes.INTEGER,
     allowNull: false,
     references: {
       model: rolesModel,
