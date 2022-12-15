@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
+import generateJWT from '../../helpers/generateJWT'
 import userModel from '../models/userModel';
 import rolesModel from '../models/rolesModel';
 
@@ -53,7 +53,7 @@ const createAccount = async (req: Request, res: Response, next: NextFunction) =>
   });
 
   // Generate a JSON Web Token
-  const token = jwt.sign({ id: newUser.get('id') }, process.env.SECRET, {
+  const token = generateJWT({ id: newUser.get('id') }, process.env.SECRET, {
     expiresIn: 86400 // expires in 24 hours
   });
 
@@ -69,6 +69,7 @@ const createAccount = async (req: Request, res: Response, next: NextFunction) =>
     }
   });
 };
+
 
 
 
