@@ -3,17 +3,18 @@ import rolesModel from './rolesModel';
 
 const db = new Database();
 
-// Define the users model
+// Define the user's attributes
 const userModel = db.sequelize.define('User', {
-  // Define the user's attributes
   id: {
     type: db.dataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },
+  // Specify the column name for the `name` attribute
   name: {
     type: db.dataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    field: 'name'
   },
   username: {
     type: db.dataTypes.STRING,

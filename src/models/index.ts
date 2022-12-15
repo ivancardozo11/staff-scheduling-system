@@ -1,4 +1,6 @@
 import { Sequelize, DataTypes } from 'sequelize';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 // Define the Database class
 export class Database {

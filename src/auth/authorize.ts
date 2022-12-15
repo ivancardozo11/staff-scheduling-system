@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import User from '../models/userModel';
 import Role from '../models/rolesModel';
 
+
 const authorize = async (req: Request, res: Response, next:NextFunction) => {
   try {
     // Get the user from the request

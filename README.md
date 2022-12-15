@@ -1,5 +1,11 @@
 # staff-scheduling-system
 
+├── **HELPERS*
+
+
+│ └── generateJWT.ts
+
+
 ├── **SRC**
 
 │ ├── **CONTROLLERS**
