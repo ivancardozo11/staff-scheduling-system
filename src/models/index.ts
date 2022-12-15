@@ -1,26 +1,25 @@
 import { Sequelize, DataTypes } from 'sequelize';
-import * as dotenv from 'dotenv';
 
-dotenv.config();
+// Define the Database class
+export class Database {
+  // The sequelize object for interacting with the database
+  public sequelize: Sequelize;
 
-//connection configuration
-export const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
-  host: process.env.DB_HOST,
-  port: 3306,
-  dialect: 'mysql',
-  define: {
-    timestamps: false,
-  },
-});
+  // The DataTypes object for defining model attributes
+  public dataTypes: typeof DataTypes;
 
-
-//authenticates the database
-sequelize.authenticate()
-.then(() => {
-  console.log('Connection to the database successfull !!');
-})
-.catch(err => {
-  console.error('Unable to connect to the database:', err);
-});
-
-export { DataTypes };
+  // Constructor for initializing the database
+  constructor() {
+    // Initialize the sequelize object
+    this.sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
+      host: process.env.DB_HOST,
+      port: 3306,
+      dialect: 'mysql',
+      define: {
+        timestamps: false,
+      },
+    });
+    // Initialize the DataTypes object
+    this.dataTypes = DataTypes;
+  }
+}

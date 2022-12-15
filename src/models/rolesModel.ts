@@ -1,19 +1,21 @@
-import { sequelize, DataTypes } from './index';
+import { Database } from './index';
+
+const db = new Database();
 
 // Define the roles model
-const Role = sequelize.define('Role', {
+const Role = db.sequelize.define('Role', {
   id: {
-    type: DataTypes.INTEGER,
+    type: db.dataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },
   name: {
-    type: DataTypes.STRING,
+    type: db.dataTypes.STRING,
     allowNull: false,
     unique: true
   },
   description: {
-    type: DataTypes.STRING,
+    type: db.dataTypes.STRING,
     allowNull: false
   }
 }, {
