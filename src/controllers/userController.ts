@@ -2,8 +2,11 @@ import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcrypt';
 import generateJWT from '../../helpers/generateJWT'
 import userModel from '../models/userModel';
-import rolesModel from '../models/rolesModel';
 import scheduleModel from '../models/scheduleModel';
+import rolesModel from '../models/rolesModel';
+import { Op } from 'sequelize';
+
+
 
 const createAccount = async (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -173,6 +176,35 @@ res.json({
     // Call the next middleware in the route
     next();
   };
+
+const viewCoworkerSchedules = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      // Get the user's ID from the request parameters
+      const userId = req.params.userId;
+  
+      // Query the database for the schedules of the user's coworkers
+      /* The [Op.ne] syntax in the database query means "not equal" in the sequelize library. It is used to specify that the user_id in the schedules table should not be equal to the userId parameter from the request.
+        */
+      const schedules = await scheduleModel.findAll({
+        where: {
+          user_id: {
+            [Op.ne]: userId
+          }
+        }
+      });
+  
+      // Send the schedules as a response
+      res.json(schedules);
+    } catch (err) {
+      // If there was an error, return a failure response
+      return res.status(500).json({
+        success: false,
+        message: err.message
+      });
+    }
+    // Call the next middleware in the route
+    next();
+  };
   
   
   
@@ -183,4 +215,5 @@ export default {
      createAccount,
      login,
      viewSchedule,
+     viewCoworkerSchedules
     };

@@ -69,15 +69,3 @@ const authenticate = async (req: RequestWithUser, res: Response, next: NextFunct
 
 
 export default authenticate;
-
-/*
-This function checks if the user exists 
-in the request, and if they do, 
-it retrieves their role from the database.
- It then checks if the user has permission 
- to access the requested resource based on their role. 
- If the user does not have permission, it returns an 
- error message. Otherwise, it calls the next 
- middleware function to continue processing the request. 
- This function should work as intended for the staff scheduling system.
- */

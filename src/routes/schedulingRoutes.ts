@@ -14,12 +14,12 @@ router.post('/account/login', userController.login);
 // // Staff users can view their schedule
 router.get('/schedule/:userId', authenticate, authorize('user'), userController.viewSchedule);
 // Staff users can view their coworker schedules
-// router.get('/coworkers/:userId', authenticate, authorize('user'), userController.viewCoworkerSchedules);
+router.get('/coworkers/:userId', authenticate, authorize('user'), userController.viewCoworkerSchedules);
 
 // // Admin endpoints
 
 // // Admins can create a schedule for users
-// router.post('/schedule/create', authenticate, authorize('admin'), adminController.createSchedule);
+router.post('/schedule/create', authenticate, authorize('admin'), adminController.createSchedule);
 // // Admins can update a schedule for users
 // router.put('/schedule/update', authenticate, authorize('admin'), adminController.updateSchedule);
 // // Admins can delete a schedule for users

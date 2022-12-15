@@ -1,6 +1,6 @@
 # staff-scheduling-system
 
-├── **HELPERS*
+├── **HELPERS**
 
 
 │ └── generateJWT.ts

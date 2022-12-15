@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import jwt from 'jsonwebtoken';
 import User from '../models/userModel';
 import Role from '../models/rolesModel';
 
