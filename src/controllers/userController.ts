@@ -53,10 +53,11 @@ const createAccount = async (req: Request, res: Response, next: NextFunction) =>
   });
 
   // Generate a JSON Web Token
-  const token = generateJWT({ id: newUser.get('id') }, process.env.SECRET, {
+  const token = generateJWT({ id: newUser.get('id') }, process.env.JWT_SECRET, {
     expiresIn: 86400 // expires in 24 hours
   });
 
+  //if everything functions, creates the user account.
   res.status(201).json({
     success: true,
     message: 'Account created successfully.',
