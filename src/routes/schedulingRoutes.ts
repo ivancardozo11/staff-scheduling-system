@@ -10,10 +10,10 @@ const router = express.Router();
 // Creates a new user account
 router.post('/account/create', userController.createAccount);
 // Logs in an existing user
-// router.post('/account/login', userController.login); 
+router.post('/account/login', userController.login); 
 // // Staff users can view their schedule
-// router.get('/schedule/:userId', authenticate, authorize('user'), userController.viewSchedule); 
-// // Staff users can view their coworker schedules
+router.get('/schedule/:userId', authenticate, authorize('user'), userController.viewSchedule);
+// Staff users can view their coworker schedules
 // router.get('/coworkers/:userId', authenticate, authorize('user'), userController.viewCoworkerSchedules);
 
 // // Admin endpoints
