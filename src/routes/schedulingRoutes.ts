@@ -21,11 +21,11 @@ router.get('/coworkers/:userId', authenticate, authorize('user'), userController
 // // Admins can create a schedule for users
 router.post('/schedule/create', authenticate, authorize('admin'), adminController.createSchedule);
 // // Admins can update a schedule for users
-// router.put('/schedule/update', authenticate, authorize('admin'), adminController.updateSchedule);
+router.put('/schedule/update', authenticate, authorize('admin'), adminController.updateSchedule);
 // // Admins can delete a schedule for users
-// router.delete('/schedule/delete', authenticate, authorize('admin'), adminController.deleteSchedule);
+router.delete('/schedule/delete', authenticate, authorize('admin'), adminController.deleteSchedule);
 // //Admins can order the list of users by accumulated work hours
-// router.get('/users/order', authenticate, authorize('admin'), adminController.orderUsersByWorkHours); 
+router.get('/users/order', authenticate, authorize('admin'), adminController.orderUsersByWorkHours); 
 
 
 export default router;
