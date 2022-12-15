@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-// import { SchedulingRoutes } from './src/routes/schedulingRoutes';
+import router from './src/routes/schedulingRoutes';
 import { Database } from './src/models/index';
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -28,8 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Add the scheduling routes to the app
-// const schedulingRoutes = new SchedulingRoutes(database);
-// schedulingRoutes.routes(app);
+app.use('/', router);
 
 // Serve the application at the given port
 app.listen(port, () => {
