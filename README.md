@@ -153,7 +153,6 @@ dotenv.config({ path: 'C:/your/path/staff-scheduling-system/.env' }); couse some
 work properly.
 
 3) npm install --> to install all packages in this project.
-4) 
 
 4) npm run start:dev for development build the app and create dist/ where is the compiled code from typescript, and inserts the admin role and the user in the database.
 
