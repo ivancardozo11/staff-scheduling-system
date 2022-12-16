@@ -7,11 +7,10 @@
     "esModuleInterop": true,
     "target": "es6",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": [
-    "./src/**/*"
-  ],
+  "include": [ "./src/**/*", "tests/**/*.ts"],
   "exclude": [
     "node_modules",
     "dist"
