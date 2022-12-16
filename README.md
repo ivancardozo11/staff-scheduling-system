@@ -144,18 +144,22 @@ use to build //the database it matters at the time of creating this tables.
 
 this app implements a .env file that store all the database credentials.
 
-Also, sometimes you need to import dotenv to the database connection, the index.ts file and the JWT file.
+Also,  you need to import dotenv to the database connection, the index.ts file and the JWT file.
+
+
 
 you migth have to configurate dotenv this way:
 dotenv.config({ path: 'C:/your/path/staff-scheduling-system/.env' }); couse sometimes the library doenst
 work properly.
 
 3) npm install --> to install all packages in this project.
+4) 
 
 4) npm run start:dev for development build the app and create dist/ where is the compiled code from typescript, and inserts the admin role and the user in the database.
 
 5) npm start:prod  to consume the backend already compiled from typescript(this is the fastest backend, remember to run npm run build or run start:dev atleast once.).
 
 6)use postman to consume the endpoints and routes.
+
 
 To know wich routes to consume check the routes in the routes folder.
