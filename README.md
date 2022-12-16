@@ -140,7 +140,7 @@ This tables have been tested and they work, but note that sometimes SQL is going
 use to build //the database it matters at the time of creating this tables.
 
 
- 2)Confiure your dotenv credentials and route paths.
+ 2 )Confiure your dotenv credentials and route paths.
 
 this app implements a .env file that store all the database credentials.
 
