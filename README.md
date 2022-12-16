@@ -53,7 +53,11 @@ CREATE TABLE roles (
     UNIQUE (name)
 );
 
-//This tables have been tested and they work, but note that sometimes SQL is going to accept first some tables and the order you use to build //the database it matters at the time of creating this tables.
+
+This tables have been tested and they work, but note that sometimes SQL is going to accept first some tables and the order you 
+
+
+use to build //the database it matters at the time of creating this tables.
 
 
 2)Confiure your dotenv credentials and route paths.
