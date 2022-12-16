@@ -8,7 +8,7 @@ import { Op } from 'sequelize';
 
 
 
-const createAccount = async (req: Request, res: Response, next: NextFunction) => {
+  const createAccount = async (req: Request, res: Response, next: NextFunction) => {
   try {
     // Check if the required parameters are present
     if (!req.body.name || !req.body.username || !req.body.password || !req.body.role) {
