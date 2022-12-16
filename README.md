@@ -1,3 +1,63 @@
+Instructions:
+
+1)Create dabatase with this structure:
+
+USE staff_scheduling_system;
+
+CREATE TABLE schedules (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    work_date DATE NOT NULL,
+    shift_length TIME NOT NULL,
+    work_hours FLOAT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    username VARCHAR(45) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role_id INT NOT NULL,
+    FOREIGN KEY (role_id) REFERENCES roles (id),
+    UNIQUE (username)
+);
+
+CREATE TABLE roles (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(45) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    UNIQUE (name)
+);
+
+//This tables have been tested and they work, but note that sometimes SQL is going to accept first some tables and the order you use to build //the database it matters at the time of creating this tables.
+
+
+2)Confiure your dotenv credentials and route paths.
+
+this app implements a .env file that store all the database credentials.
+
+Also, sometimes you need to import dotenv to the database connection, the index.ts file and the JWT file.
+
+you migth have to configurate dotenv this way:
+dotenv.config({ path: 'C:/your/path/staff-scheduling-system/.env' }); couse sometimes the library doenst
+work properly.
+
+3) npm install --> to install all packages in this project.
+
+4) npm run start:dev for development build the app and create dist/ where is the compiled code from typescript, and inserts the admin role and the user in the database.
+
+5) npm start:prod  to consume the backend already compiled from typescript(this is the fastest backend, remember to run npm run build or run start:dev atleast once.).
+
+6)use postman to consume the endpoints and routes.
+
+To know wich routes to consume check the routes in the routes folder.
+
+
+
+APP structure tree:
+
+
 # staff-scheduling-system
 
 ├── **HELPERS**
