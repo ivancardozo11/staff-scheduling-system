@@ -1,32 +1,55 @@
 Instructions:
 
+
 1)Create dabatase with this structure:
+
 
 USE staff_scheduling_system;
 
+
 CREATE TABLE schedules (
+
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    
     user_id INT NOT NULL,
+    
     work_date DATE NOT NULL,
+    
     shift_length TIME NOT NULL,
+    
     work_hours FLOAT NOT NULL,
+    
     FOREIGN KEY (user_id) REFERENCES users (id)
+    
 );
 
+
 CREATE TABLE users (
+
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(255) NOT NULL DEFAULT '',
+    
     username VARCHAR(45) NOT NULL,
+    
     password VARCHAR(255) NOT NULL,
+    
     role_id INT NOT NULL,
+    
     FOREIGN KEY (role_id) REFERENCES roles (id),
+    
     UNIQUE (username)
+    
 );
 
 CREATE TABLE roles (
+
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(45) NOT NULL,
+    
     description VARCHAR(255) NOT NULL,
+    
     UNIQUE (name)
 );
 
