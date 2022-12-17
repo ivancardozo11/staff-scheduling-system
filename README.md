@@ -11,6 +11,14 @@ APP structure tree:
 
 ├── **SRC**
 
+| |── **AUTHENTICATION**
+
+
+│     ├── authenticate.ts
+
+│     └── authorize.ts
+
+
 │ ├── **CONTROLLERS**
 
 │ │ ├── adminController.ts
@@ -32,19 +40,9 @@ APP structure tree:
 │ ├── **ROUTES**
 
 
-│ │ ├── adminRoutes.ts
+│ │ ├── schedulingRoutes.ts
 
-│ │ └── userRoutes.ts
-│
-
-
-│ └── **AUTHENTICATION**
-
-
-
-│     ├── schedulingRoutes.ts
-
-
+│ │ 
 
 
 ├── **TESTS**
@@ -58,13 +56,15 @@ APP structure tree:
 
 │ └── scheduleModel.test.ts
 
+|── index.ts
+
 ├── jest.config.js
+
+├── openapitools.json
 
 ├── package.json
 
 ├── tsconfig.json
-
-└── index.ts
 
 
 
