@@ -11,7 +11,7 @@ APP structure tree:
 
 ├── **SRC**
 
-| |── **AUTHENTICATION**
+| ├── **AUTHENTICATION**
 
 
 │     ├── authenticate.ts
@@ -34,6 +34,7 @@ APP structure tree:
 │ │ ├── scheduleModel.ts
 
 │ │ └── userModel.ts
+
 │ │
 
 
@@ -56,7 +57,7 @@ APP structure tree:
 
 │ └── scheduleModel.test.ts
 
-|── index.ts
+├── index.ts
 
 ├── jest.config.js
 
@@ -135,7 +136,6 @@ CREATE TABLE roles (
 
 
 This tables have been tested and they work, but note that sometimes SQL is going to accept first some tables and the order you 
-
 
 use to build the database it matters at the time of creating this tables.
 
