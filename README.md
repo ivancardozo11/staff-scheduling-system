@@ -11,6 +11,14 @@ APP structure tree:
 
 ├── **SRC**
 
+| ├── **AUTHENTICATION**
+
+
+│     ├── authenticate.ts
+
+│     └── authorize.ts
+
+
 │ ├── **CONTROLLERS**
 
 │ │ ├── adminController.ts
@@ -26,25 +34,16 @@ APP structure tree:
 │ │ ├── scheduleModel.ts
 
 │ │ └── userModel.ts
+
 │ │
 
 
 │ ├── **ROUTES**
 
 
-│ │ ├── adminRoutes.ts
+│ │ ├── schedulingRoutes.ts
 
-│ │ └── userRoutes.ts
-│
-
-
-│ └── **AUTHENTICATION**
-
-
-
-│     ├── schedulingRoutes.ts
-
-
+│ │ 
 
 
 ├── **TESTS**
@@ -58,13 +57,15 @@ APP structure tree:
 
 │ └── scheduleModel.test.ts
 
+├── index.ts
+
 ├── jest.config.js
+
+├── openapitools.json
 
 ├── package.json
 
 ├── tsconfig.json
-
-└── index.ts
 
 
 
@@ -135,7 +136,6 @@ CREATE TABLE roles (
 
 
 This tables have been tested and they work, but note that sometimes SQL is going to accept first some tables and the order you 
-
 
 use to build the database it matters at the time of creating this tables.
 
