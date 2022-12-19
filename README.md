@@ -49,13 +49,17 @@ APP structure tree:
 ├── **TESTS**
 
 
-│ ├── adminController.test.ts
+│ ├── createAccount.test.ts
 
 
-│ ├── userController.test.ts
+│ ├── loginErrorUsePassword.test.ts
 
+│ ├── loginOk.test.ts
 
-│ └── scheduleModel.test.ts
+│ ├── scheduleModel.test.ts
+
+│ └── userModel.test.ts
+
 
 ├── index.ts
 
