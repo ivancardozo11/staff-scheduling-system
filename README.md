@@ -51,7 +51,6 @@ APP structure tree:
 
 │ ├── createAccount.test.ts
 
-
 │ ├── loginErrorUsePassword.test.ts
 
 │ ├── loginOk.test.ts
