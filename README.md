@@ -142,9 +142,29 @@ use to build the database it matters at the time of creating this tables.
 
  2 )Configure your dotenv credentials and route paths.
 
-this app implements a .env file that store all the database credentials.
+this app implements a .env file that store all the database credentials and environment variables
 
-Also,  you need to import dotenv to the database connection, the index.ts file and the JWT file.
+    Also,  you need to import dotenv to the database connection, the index.ts file and the JWT file.
+            How to setup docker for this app:
+
+        - First, setup inside the .env file the global variable:
+
+        - change from : 
+            DB_HOST=localhost
+            to
+            DB_HOST=host.docker.internal 
+
+            this is because its necesary for docker to simulate your database address as if its not local.
+
+        - To build the docker image:  
+
+            docker build --no-cache -t node-backend .
+
+        - To build the container:
+
+            docker run --add-host host.docker.internal:host-gateway -p 8080 -d node-backend 
+
+            This will expose the port from our localserver
 
 
 
