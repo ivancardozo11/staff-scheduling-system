@@ -3,9 +3,7 @@ import userModel from './userModel';
 
 const db = new Database();
 
-// Define the schedule model
 const scheduleModel = db.sequelize.define('Schedule', {
-  // Define the schedule's attributes
   id: {
     type: db.dataTypes.INTEGER,
     autoIncrement: true,

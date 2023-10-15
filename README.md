@@ -76,7 +76,7 @@ dotenv.config({ path: 'C:/your/path/staff-scheduling-system/.env' });
 ## Configure your dotenv credentials and route paths.
 
 * This app implements a .env file that store all the database credentials and environment variables and
-also,  you need to import dotenv to the database connection, the index.ts file and the JWT file. *
+also,  you need to import dotenv to the database connection, the index.ts file and the JWT file.
 
 ## How to setup docker for this app:
 
